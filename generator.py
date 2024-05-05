@@ -21,7 +21,6 @@ os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           C:\\Users\leonm\PycharmProjects\leonsystem\\bin\cmd.py')
 os.system(f'git add .')
 os.system(f'git commit -m "Normal update"')
-# os.system(f'git pull --rebase origin main')
 os.system(f'git pull origin main')
 os.system(f'git push -u origin main')
 #Just do something I wanna to do.
