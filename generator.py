@@ -1,5 +1,5 @@
 import os
-os.system(f'pyinstaller --add-data "venv/bin/_internal/audio:audio"\
+os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --add-data "bin/_internal/font:font"\
           --add-data "bin/_internal/image:image"\
           --add-data "bin/_internal/app:app"\

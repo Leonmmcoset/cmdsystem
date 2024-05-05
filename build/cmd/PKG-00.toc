@@ -52,7 +52,7 @@
    'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
    'PYSOURCE'),
   ('cmd',
-   'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\bin\\cmd.py',
+   'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\bin\\cmd.py',
    'PYSOURCE')],
  'python311.dll',
  True,
