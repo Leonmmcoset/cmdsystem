@@ -36,7 +36,7 @@ def start():
     def start():
         """开始函数"""
         # 提示用户输入要运行的脚本名
-        script_name = input("Enter the script name: ")
+        script_name = input("Enter the app name: ")
 
         # 查找并运行脚本
         find_and_run_script(script_name)
