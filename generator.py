@@ -1,7 +1,7 @@
 import os
 os.system(f'git add .')
 os.system(f'git commit -m "Normal update"')
-os.system(f'git pull --rebase origin main')
+# os.system(f'git pull --rebase origin main')
 os.system(f'git pull origin main')
 os.system(f'git push -u origin main')
 os.system(f'pyinstaller --add-data "venv/bin/_internal/audio:audio"\
