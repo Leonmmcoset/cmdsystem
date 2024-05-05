@@ -1,9 +1,4 @@
 import os
-os.system(f'git add .')
-os.system(f'git commit -m "Normal update"')
-# os.system(f'git pull --rebase origin main')
-os.system(f'git pull origin main')
-os.system(f'git push -u origin main')
 os.system(f'pyinstaller --add-data "venv/bin/_internal/audio:audio"\
           --add-data "venv/bin/_internal/font:font"\
           --add-data "venv/bin/_internal/image:image"\
@@ -25,5 +20,10 @@ os.system(f'pyinstaller --add-data "venv/bin/_internal/audio:audio"\
           -i="C:\\Users\\leonm\\PycharmProjects\\leonsystem\\icon.ico" \
           -D -y \
           C:\\Users\leonm\PycharmProjects\leonsystem\\venv\\bin\cmd.py')
+os.system(f'git add .')
+os.system(f'git commit -m "Normal update"')
+# os.system(f'git pull --rebase origin main')
+os.system(f'git pull origin main')
+os.system(f'git push -u origin main')
 #Just do something I wanna to do.
 #-----RENDER-----#
