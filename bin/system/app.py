@@ -18,7 +18,7 @@ def start():
 
                 # 动态导入脚本
                 try:
-                    module = importlib.import_module(f"_internal.app.{script_name}")
+                    module = importlib.import_module(f"app.{script_name}")
                     # 调用脚本中的 start() 函数
                     module.start()
                 except ModuleNotFoundError:
