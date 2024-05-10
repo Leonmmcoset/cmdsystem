@@ -7,7 +7,7 @@ def start():
     def find_and_run_script(script_name):
         """查找并运行脚本"""
         # 获取 _internal/app/py 文件夹的路径
-        script_dir = "_internal/app"
+        script_dir = "_internal\app"
 
         # 遍历该文件夹中的所有文件
         for file_name in os.listdir(script_dir):
@@ -15,7 +15,7 @@ def start():
             if file_name == script_name + ".py":
                 # 构建脚本文件的绝对路径
                 script_path = os.path.join(script_dir, file_name)
-
+                print('Script path:',script_path)
                 # 动态导入脚本
                 try:
                     module = importlib.import_module(f"app.{script_name}")
