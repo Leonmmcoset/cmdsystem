@@ -1060,8 +1060,8 @@ class Installer:
     def buildAPP(self, output, platform):
 
         output = Filename(output)
-        if output.isDirectory() and output.getExtension() != 'outapp':
-            output = Filename(output, "%s.outapp" % self.fullname)
+        if output.isDirectory() and output.getExtension() != 'app':
+            output = Filename(output, "%s.app" % self.fullname)
         Installer.notify.info("Creating %s..." % output)
 
         # Create the executable for the application bundle

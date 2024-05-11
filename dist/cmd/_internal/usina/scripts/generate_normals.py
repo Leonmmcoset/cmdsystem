@@ -80,7 +80,7 @@ if __name__ == '__main__':
     print('------', perf_counter() - t)
     # print(norms)
     # from ursina import *
-    # outapp = Ursina()
+    # app = Ursina()
     # m = Mesh(vertices=vertices)
     # m.generate_normals()
     # e = Entity(model=m)
@@ -95,4 +95,4 @@ if __name__ == '__main__':
     #     lines=Entity(model=Mesh(verts, mode='line'))
     # # e.shader = 'shader_normals'
     # EditorCamera()
-    # outapp.run()
+    # app.run()

@@ -687,7 +687,7 @@ Style {
                                                                  control.selectedDate.getDate() === date.getDate()
                                 readonly property alias date: delegateLoader.__date
                                 readonly property bool valid: delegateLoader.valid
-                                // TODO: this will not be correct if the outapp is running when a new day begins.
+                                // TODO: this will not be correct if the app is running when a new day begins.
                                 readonly property bool today: date.getTime() === new Date().setHours(0, 0, 0, 0)
                                 readonly property bool visibleMonth: date.getMonth() === control.visibleMonth
                                 readonly property bool hovered: panelItem.hoveredCellIndex == index

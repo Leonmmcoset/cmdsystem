@@ -14,7 +14,7 @@ be passed on the command-line.
 
 Usage:
 
-  %(prog)s [opts] outapp.p3d standalone|installer|html
+  %(prog)s [opts] app.p3d standalone|installer|html
 
 Modes:
 

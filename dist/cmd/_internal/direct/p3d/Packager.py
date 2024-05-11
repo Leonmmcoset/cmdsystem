@@ -439,7 +439,7 @@ class Packager:
                     raise PackagerError(message)
 
             if self.p3dApplication:
-                # Default compression level for an outapp.
+                # Default compression level for an app.
                 self.compressionLevel = 6
 
                 # Every p3dapp requires panda3d.
@@ -3417,7 +3417,7 @@ class Packager:
         # appropriate platform-specific extensions.
 
         if self.platform.startswith('osx'):
-            # On Mac, we package up a P3DPython.outapp bundle.  This
+            # On Mac, we package up a P3DPython.app bundle.  This
             # includes specifications in the plist file to avoid
             # creating a dock icon and stuff.
 
@@ -3435,7 +3435,7 @@ class Packager:
 ##             if found:
 ##                 resources.append(filename)
 
-            self.do_makeBundle('P3DPython.outapp', plist, executable = 'p3dpython',
+            self.do_makeBundle('P3DPython.app', plist, executable = 'p3dpython',
                                resources = resources, dependencyDir = '')
 
         else:

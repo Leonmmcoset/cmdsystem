@@ -446,7 +446,7 @@ class build_apps(setuptools.Command):
             assert self.optimized_wheel_index, 'An index for optimized wheels must be defined if use_optimized_wheels is set'
 
         assert os.path.exists(self.requirements_path), 'Requirements.txt path does not exist: {}'.format(self.requirements_path)
-        assert num_gui_apps + num_console_apps != 0, 'Must specify at least one outapp in either gui_apps or console_apps'
+        assert num_gui_apps + num_console_apps != 0, 'Must specify at least one app in either gui_apps or console_apps'
 
         self.exclude_dependencies = [p3d.GlobPattern(i) for i in self.exclude_dependencies]
         for glob in self.exclude_dependencies:
@@ -596,16 +596,16 @@ class build_apps(setuptools.Command):
             pef.close()
 
     def bundle_macos_app(self, builddir):
-        """Bundle built runtime into a .outapp for macOS"""
+        """Bundle built runtime into a .app for macOS"""
 
-        appname = '{}.outapp'.format(self.macos_main_app)
+        appname = '{}.app'.format(self.macos_main_app)
         appdir = os.path.join(builddir, appname)
         contentsdir = os.path.join(appdir, 'Contents')
         macosdir = os.path.join(contentsdir, 'MacOS')
         fwdir = os.path.join(contentsdir, 'Frameworks')
         resdir = os.path.join(contentsdir, 'Resources')
 
-        self.announce('Bundling macOS outapp into {}'.format(appdir), distutils.log.INFO)
+        self.announce('Bundling macOS app into {}'.format(appdir), distutils.log.INFO)
 
         # Create initial directory structure
         os.makedirs(macosdir)
@@ -1181,7 +1181,7 @@ class build_apps(setuptools.Command):
 
                 copy_file(src, dst)
 
-        # Bundle into an .outapp on macOS
+        # Bundle into an .app on macOS
         if self.macos_main_app and 'macosx' in platform:
             self.bundle_macos_app(builddir)
 

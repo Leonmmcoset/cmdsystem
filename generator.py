@@ -2,7 +2,7 @@ import os
 os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --add-data "bin/_internal/font:font"\
           --add-data "bin/_internal/image:image"\
-          --add-data "bin/_internal/app:app"\
+          --add-data "bin/_internal/outapp:outapp"\
           --add-data "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina:usina/"\
           --add-data "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina-7.0.0.dist-info:ursina-7.0.0.dist-info"\
           --add-data "C:\\Users\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\panda3d:panda3d"\

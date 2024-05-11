@@ -15,11 +15,11 @@ also be used to build p3d applications, using a pdef description file.
 
 Usage:
 
-  %s [opts] -o outapp.p3d
+  %s [opts] -o app.p3d
 
 Options:
 
-  -o outapp.p3d
+  -o app.p3d
      Specify the name of the p3d file to generate.  This is required.
 
   -d application_root
@@ -166,7 +166,7 @@ def makePackedApp(args):
             sys.exit(0)
 
     if not appFilename:
-        raise ArgumentError("No target outapp specified.  Use:\n  %s -o outapp.p3d\nUse -h to get more usage information." % (os.path.split(sys.argv[0])[1]))
+        raise ArgumentError("No target app specified.  Use:\n  %s -o app.p3d\nUse -h to get more usage information." % (os.path.split(sys.argv[0])[1]))
 
     if args:
         raise ArgumentError("Extra arguments on command line.")

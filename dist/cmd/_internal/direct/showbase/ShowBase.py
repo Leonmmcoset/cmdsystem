@@ -2010,14 +2010,14 @@ class ShowBase(DirectObject.DirectObject):
             self.notify.debug("Disabling sound effects")
 
     # enable/disableAllAudio allow a programmable global override-off
-    # for current audio settings.  they're meant to be called when outapp
+    # for current audio settings.  they're meant to be called when app
     # loses audio focus (switched out), so we can turn off sound without
     # affecting internal sfxActive/musicActive sound settings, so things
-    # come back ok when the outapp is switched back to
+    # come back ok when the app is switched back to
 
     def disableAllAudio(self):
         """
-        Disables all SFX and music managers, meant to be called when the outapp
+        Disables all SFX and music managers, meant to be called when the app
         loses audio focus.
         """
         self.AppHasAudioFocus = 0
@@ -2029,7 +2029,7 @@ class ShowBase(DirectObject.DirectObject):
     def enableAllAudio(self):
         """
         Reenables the SFX and music managers that were active at the time
-        `disableAllAudio()` was called.  Meant to be called when the outapp regains
+        `disableAllAudio()` was called.  Meant to be called when the app regains
         audio focus.
         """
         self.AppHasAudioFocus = 1
@@ -2170,7 +2170,7 @@ class ShowBase(DirectObject.DirectObject):
             self.recorder.playFrame()
 
         if self.mainWinMinimized:
-            # If the main window is minimized, slow down the outapp a bit
+            # If the main window is minimized, slow down the app a bit
             # by sleeping here in igLoop so we don't use all available
             # CPU needlessly.
 
@@ -2212,7 +2212,7 @@ class ShowBase(DirectObject.DirectObject):
             self.recorder.playFrame()
 
         if self.mainWinMinimized:
-            # If the main window is minimized, slow down the outapp a bit
+            # If the main window is minimized, slow down the app a bit
             # by sleeping here in igLoop so we don't use all available
             # CPU needlessly.
 
@@ -2244,7 +2244,7 @@ class ShowBase(DirectObject.DirectObject):
         # run after most tasks, but before igLoop.
         self.taskMgr.add(self.__ivalLoop, 'ivalLoop', sort = 20)
         # make the collisionLoop task run before igLoop,
-        # but leave enough room for the outapp to insert tasks
+        # but leave enough room for the app to insert tasks
         # between collisionLoop and igLoop
         self.taskMgr.add(self.__collisionLoop, 'collisionLoop', sort = 30)
 

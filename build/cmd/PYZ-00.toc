@@ -261,7 +261,7 @@
    'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\_distutils_hack\\override.py',
    'PYMODULE'),
   ('_internal', '-', 'PYMODULE'),
-  ('_internal.app', '-', 'PYMODULE'),
+  ('_internal.outapp', '-', 'PYMODULE'),
   ('_markupbase',
    'C:\\Users\\leonm\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_markupbase.py',
    'PYMODULE'),

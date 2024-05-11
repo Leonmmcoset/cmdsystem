@@ -631,7 +631,7 @@ class AppRunner(DirectObject):
 
     def initPackedAppEnvironment(self):
         """ This function sets up the Python environment suitably for
-        running a packed outapp.  It should only run once in any given
+        running a packed app.  It should only run once in any given
         session (and it includes logic to ensure this). """
 
         if self.packedAppEnvironmentInitialized:
@@ -699,8 +699,8 @@ class AppRunner(DirectObject):
                 if mainName:
                     moduleName = mainName
 
-            # Temporarily set this flag while we import the outapp, so
-            # that if the outapp calls run() within its own main.py, it
+            # Temporarily set this flag while we import the app, so
+            # that if the app calls run() within its own main.py, it
             # will properly get ignored by ShowBase.
             self.initialAppImport = True
 
@@ -726,7 +726,7 @@ class AppRunner(DirectObject):
             self.initialAppImport = False
 
             if self.interactiveConsole:
-                # At this point, we have successfully loaded the outapp.
+                # At this point, we have successfully loaded the app.
                 # If the interactive_console flag is enabled, stop the
                 # main loop now and give the user a Python prompt.
                 taskMgr.stop()
