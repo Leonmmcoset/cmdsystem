@@ -144,7 +144,7 @@ elif SYSTEMCHOOSEMODE == 1:
             elif com =='color':
                 color.start()
             elif com =='':
-                print()
+                pass
             elif com =='vbs':
                 vbs.start()
             elif com =='blockgame':
