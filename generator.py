@@ -1,3 +1,4 @@
+#The Upload & Generator File#
 import os
 os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --add-data "bin/_internal/outapp:outapp"\
@@ -16,13 +17,12 @@ os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --path "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina-7.0.0.dist-info"\
           --path "C:\\Users\\leonm\PycharmProjects\\leonsystem\\venv\Lib\site-packages\panda3d-1.10.14.dist-info"\
           --collect-submodules panda3d --collect-binaries panda3d --collect-data panda3d --collect-data ursina --collect-submodules ursina --collect-binaries ursina --collect-data panda3d-1.10.14.dist-info --collect-submodules panda3d-1.10.14.dist-info --collect-binaries panda3d-1.10.14.dist-info --collect-data ursina-7.0.0.dist-info --collect-submodules ursina-7.0.0.dist-info --collect-binaries ursina-7.0.0.dist-info\
-          --hidden-import outapp \
           -i="C:\\Users\\leonm\\PycharmProjects\\leonsystem\\icon.ico" \
           -D -y \
           C:\\Users\leonm\PycharmProjects\leonsystem\\bin\cmd.py')
+#If you want to generate .py to .exe,delete code done below.
 os.system(f'git add .')
 os.system(f'git commit -m "Normal update"')
 os.system(f'git pull origin main')
 os.system(f'git push -u origin main')
 #Just do something I wanna to do.
-#-----RENDER-----#

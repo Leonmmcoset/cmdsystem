@@ -11,13 +11,18 @@ CMD System by LeonMMcoset
 Use Python
 '''
 #System start
-print('BIOS START...')
-print('PLEASE WAIT')
+print('///---CORE SYSTEM---///')
+print('FOR CMD SYSTEM RUNNING CORE')
+print('CORE IS CODE BY LEONMMCOSET')
+print('COPYRIGHT LEONMMCOSET 2021-2024.ALL RIGHTS RESERVED.')
+print('-----------------------')
+print('CORE LOADING...')
 from time import *
 from leonranp import *
 from system import prosess as p
 from PIL import Image
 import os
+print('LOAD DONE.')
 #Color must put here!
 from system import color
 print('---Choose system start up mode---')
@@ -25,7 +30,8 @@ print('1.Normal')
 print('2.Shutdown')
 SYSTEMCHOOSEMODE = int(input('Mode:'))
 if SYSTEMCHOOSEMODE == 2:
-    KeyboardInterrupt
+    pass
+    from system import audio as au
 elif SYSTEMCHOOSEMODE == 1:
     #SYSTEM APPCATION LIST START
     print(color.green+'Starting...'+color.end)
