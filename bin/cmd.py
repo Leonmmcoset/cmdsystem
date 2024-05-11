@@ -160,9 +160,9 @@ elif SYSTEMCHOOSEMODE == 1:
                 shutdown.sleep()
             elif com =='pip':
                 pip.start()
-            elif com =='outapp docx':
+            elif com =='app docx':
                 osappdocx.start()
-            elif com =='outapp':
+            elif com =='app':
                 outapp.start()
             else:
                 print(color.red+'Error:"',com,'"is not a command!'+color.end)
