@@ -6,8 +6,8 @@ import importlib
 def start():
     def find_and_run_script(script_name):
         """查找并运行脚本"""
-        # 获取 _internal/app/py 文件夹的路径
-        script_dir = "_internal\\app"
+        # 获取 _internal/outapp/py 文件夹的路径
+        script_dir = "_internal\\outoutapp"
 
         # 遍历该文件夹中的所有文件
         for file_name in os.listdir(script_dir):
@@ -17,7 +17,7 @@ def start():
                 script_path = os.path.join(script_dir, file_name)
                 # 动态导入脚本
                 try:
-                    module = importlib.import_module(f"app.{script_name}")
+                    module = importlib.import_module(f"outapp.{script_name}")
                     # 调用脚本中的 start() 函数
                     module.start()
                 except Exception as e:

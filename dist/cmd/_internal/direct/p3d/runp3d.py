@@ -15,7 +15,7 @@ build instead of with its advertised version requirements.
 
 Usage:
 
-  runp3d.py app.p3d [args]
+  runp3d.py outapp.p3d [args]
 
 The command-line arguments following the application name are passed
 into the application unchanged.
@@ -46,7 +46,7 @@ def parseSysArgs():
             sys.exit(1)
 
     if not args or not args[0]:
-        raise ArgumentError("No Panda app specified.  Use:\nrunp3d.py app.p3d")
+        raise ArgumentError("No Panda outapp specified.  Use:\nrunp3d.py outapp.p3d")
 
     arg0 = args[0]
     p3dFilename = Filename.fromOsSpecific(arg0)

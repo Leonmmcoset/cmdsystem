@@ -47,7 +47,7 @@ import QtQuick.Controls.Private 1.0
     \since 5.1
     \ingroup applicationwindow
     \ingroup controls
-    \brief Contains status information in your app.
+    \brief Contains status information in your outapp.
 
     The common way of using StatusBar is in relation to \l ApplicationWindow.
 

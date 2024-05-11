@@ -379,7 +379,7 @@ def makeInstaller():
     if sys.platform == "darwin":
         npapi = 'nppanda3d.plugin'
         panda3d = 'panda3d'
-        panda3dapp = 'Panda3D.app'
+        panda3dapp = 'Panda3D.outapp'
         baseFiles = [npapi, panda3d, panda3dapp]
     elif sys.platform == 'win32':
         ocx = 'p3dactivex.ocx'
@@ -461,7 +461,7 @@ def makeInstaller():
 
         infoFilename = None
         descriptionFilename = None
-        packagemaker = "/Applications/Xcode.app/Contents/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"
+        packagemaker = "/Applications/Xcode.outapp/Contents/Applications/PackageMaker.outapp/Contents/MacOS/PackageMaker"
         if not os.path.exists(packagemaker):
             packagemaker = "/Developer/usr/bin/packagemaker"
 

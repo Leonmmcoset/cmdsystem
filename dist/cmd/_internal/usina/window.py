@@ -216,7 +216,7 @@ class Window(WindowProperties):
         self.cog_menu.highlight.color = color.azure
         self.cog_button = Button(parent=self.editor_ui, eternal=True, model='quad', texture='cog', scale=.015, origin=(1,-1), position=self.bottom_right, ignore_paused=True, name='cog_button')
         self.cog_menu.y = self.cog_button.y + (self.cog_menu.bg.scale_y * self.cog_menu.scale_y) + Text.size
-        info_text ='''This menu is not enabled in builds. To see how the app will look like in builds, do Ursina(development_mode=False), which will disable all editor ui and start the app in fullscreen. To disable only this menu, do window.cog_menu.enabled = False'''
+        info_text ='''This menu is not enabled in builds. To see how the outapp will look like in builds, do Ursina(development_mode=False), which will disable all editor ui and start the outapp in fullscreen. To disable only this menu, do window.cog_menu.enabled = False'''
         self.cog_menu.info = Button(parent=self.cog_menu, model='circle', text='<gray>?', scale=.025, origin=(.5,-.5), tooltip=Tooltip(info_text, scale=.75, origin=(-.5,-.5), eternal=True), eternal=True, name='cog_menu_info')
         self.cog_menu.info.text_entity.scale *= .75
         def _toggle_cog_menu():
@@ -472,7 +472,7 @@ instance = Window()
 if __name__ == '__main__':
     from ursina import *
     # application.development_mode = False
-    # app = Ursina(borderless=True, forced_aspect_ratio=16/9)
+    # outapp = Ursina(borderless=True, forced_aspect_ratio=16/9)
     app = Ursina(
         title='Ursina',
         # borderless=False,

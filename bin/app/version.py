@@ -1,5 +1,5 @@
 #Command system version
-#/app/version
+#/outapp/version
 from system import time
 def start():
     import platform
@@ -20,7 +20,7 @@ def start():
     print('CMD Console')
     print('Coded by LeonMMcoset')
     print('(C)LeonMMcoset 2021-2024')
-    print('Version 25.2 Outside App Test & Fix 7')
+    print('Version 25.2 Outside App Test & Fix 7(wish done!No bugs!!!)')
     print('Windows version:',windows_version)
     print('Processor:',processor_info)
     print('RAM:',ram_total,'B')

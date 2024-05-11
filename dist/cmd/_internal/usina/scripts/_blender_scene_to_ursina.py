@@ -31,7 +31,7 @@ from time import perf_counter
 scene_parent = Entity()
 
 if __name__ == '__main__':
-    app = Ursina()
+    outapp = Ursina()
 
 t = perf_counter()
 '''
@@ -171,7 +171,7 @@ scene_parent.{ob.name.replace('.', '_')} = Entity(
     code += '''
 if __name__ == '__main__':
     EditorCamera()
-    app.run()
+    outapp.run()
 '''
 
     # return code

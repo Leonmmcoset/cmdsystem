@@ -98,7 +98,7 @@ class Entity(NodePath, metaclass=PostInitCaller):
 
 
         if not _Ursina_instance and _warn_if_ursina_not_instantiated and add_to_scene_entities:
-            print_warning('Tried to instantiate Entity before Ursina. Please create an instance of Ursina first (app = Ursina())', self.line_definition)
+            print_warning('Tried to instantiate Entity before Ursina. Please create an instance of Ursina first (outapp = Ursina())', self.line_definition)
 
 
         # make sure things get set in the correct order. both colliders and texture need the model to be set first.

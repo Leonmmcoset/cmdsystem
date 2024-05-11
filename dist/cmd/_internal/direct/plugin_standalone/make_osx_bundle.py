@@ -4,7 +4,7 @@
 
 This script constructs the bundle directory structure for the OSX
 program panda3d_mac, which is built by the code in this directory.  It
-takes no parameters, and produces the app bundle in the same place.
+takes no parameters, and produces the outapp bundle in the same place.
 
 """
 
@@ -57,7 +57,7 @@ def makeBundle(startDir):
 
     # Generate the bundle directory structure
     rootFilename = Filename(fstartDir)
-    bundleFilename = Filename(rootFilename, 'Panda3D.app')
+    bundleFilename = Filename(rootFilename, 'Panda3D.outapp')
     if os.path.exists(bundleFilename.toOsSpecific()):
         shutil.rmtree(bundleFilename.toOsSpecific())
 

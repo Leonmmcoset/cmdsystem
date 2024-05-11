@@ -212,7 +212,7 @@ class Ursina(ShowBase):
 
 
     def input(self, key, is_raw=False): # internal method for handling input
-        """Built-in input handler. Propagates the input to all entities and the input function of the main script. Main use case for this it to simulate input though code, like: app.input('a').
+        """Built-in input handler. Propagates the input to all entities and the input function of the main script. Main use case for this it to simulate input though code, like: outapp.input('a').
 
         Args:
             key (Any): The input key.
@@ -303,7 +303,7 @@ class Ursina(ShowBase):
                     if script.enabled and hasattr(script, 'text_input') and callable(script.text_input):
                         script.text_input(key)
 
-    def step(self): # use this control the update loop yourself. call app.step() in a while loop for example, instead of app.run()
+    def step(self): # use this control the update loop yourself. call outapp.step() in a while loop for example, instead of outapp.run()
         self.taskMgr.step()
 
 

@@ -42,7 +42,7 @@ class WxPandaShell(WxAppShell):
 
         self.fStartDirect = fStartDirect or fDirect
 
-        # Create the Wx app
+        # Create the Wx outapp
         self.wxApp = wx.App(redirect = False)
         self.wxApp.SetAppName(self.appname)
         WxAppShell.__init__(self, size=wx.Size(self.frameWidth, self.frameHeight))

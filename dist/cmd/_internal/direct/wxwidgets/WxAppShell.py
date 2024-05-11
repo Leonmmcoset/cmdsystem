@@ -91,7 +91,7 @@ class WxAppShell(wx.Frame):
         pass
 
     def createInterface(self):
-        # Override this method to create the interface for the app.
+        # Override this method to create the interface for the outapp.
         pass
 
     def onDestroy(self, event):
