@@ -7,7 +7,7 @@ def start():
     def find_and_run_script(script_name):
         """查找并运行脚本"""
         # 获取 _internal/app/py 文件夹的路径
-        script_dir = "app"
+        script_dir = "_internal\\app"
 
         # 遍历该文件夹中的所有文件
         for file_name in os.listdir(script_dir):

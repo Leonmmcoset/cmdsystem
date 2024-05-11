@@ -20,7 +20,7 @@ def start():
     print('CMD Console')
     print('Coded by LeonMMcoset')
     print('(C)LeonMMcoset 2021-2024')
-    print('Version 25.2 Outside App Test & Fix 6')
+    print('Version 25.2 Outside App Test & Fix 7')
     print('Windows version:',windows_version)
     print('Processor:',processor_info)
     print('RAM:',ram_total,'B')
