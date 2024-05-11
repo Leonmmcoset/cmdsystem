@@ -11,10 +11,13 @@ CMD System by LeonMMcoset
 Use Python
 '''
 #System start
+print('BIOS START...')
+print('PLEASE WAIT')
 from time import *
 from leonranp import *
 from system import prosess as p
 from PIL import Image
+import os
 #Color must put here!
 from system import color
 print('---Choose system start up mode---')

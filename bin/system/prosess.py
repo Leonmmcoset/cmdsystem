@@ -1,4 +1,3 @@
-import time
 import sys
 total = 0
 progress = 0

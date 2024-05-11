@@ -7,7 +7,7 @@ def start():
     def find_and_run_script(script_name):
         """查找并运行脚本"""
         # 获取 _internal/app/py 文件夹的路径
-        script_dir = "_internal\app"
+        script_dir = "_internal\\app"
 
         # 遍历该文件夹中的所有文件
         for file_name in os.listdir(script_dir):
@@ -15,16 +15,18 @@ def start():
             if file_name == script_name + ".py":
                 # 构建脚本文件的绝对路径
                 script_path = os.path.join(script_dir, file_name)
-                print('Script path:',script_path)
                 # 动态导入脚本
                 try:
                     module = importlib.import_module(f"app.{script_name}")
                     # 调用脚本中的 start() 函数
                     module.start()
-                except ModuleNotFoundError:
-                    print(f"Script '{script_name}' not found.")
-                except AttributeError:
-                    print(f"Script '{script_name}' does not have a 'start()' function.")
+                #TEST
+                except NameError:
+                    print()
+                # except ModuleNotFoundError:
+                #     print(f"Script '{script_name}' not found.")
+                # except AttributeError:
+                #     print(f"Script '{script_name}' does not have a 'start()' function.")
 
                 return True
 
@@ -33,7 +35,7 @@ def start():
         return False
 
 
-    def start():
+    def startapp():
         """开始函数"""
         # 提示用户输入要运行的脚本名
         script_name = input("Enter the app name: ")
@@ -41,4 +43,4 @@ def start():
         # 查找并运行脚本
         find_and_run_script(script_name)
 
-    start()
+    startapp()
