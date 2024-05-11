@@ -1,5 +1,6 @@
-from turtle import *
+#Test appcation
 def start():
+    from turtle import *
     a = int(input('Section:'))
     if a == 1:
         for i in range(4):
