@@ -20,9 +20,8 @@ def start():
                     module = importlib.import_module(f"app.{script_name}")
                     # 调用脚本中的 start() 函数
                     module.start()
-                #TEST
-                except NameError:
-                    print()
+                except Exception as e:
+                    print('Error found!It is:',e)
                 # except ModuleNotFoundError:
                 #     print(f"Script '{script_name}' not found.")
                 # except AttributeError:
