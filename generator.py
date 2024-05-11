@@ -1,5 +1,6 @@
 import os
 os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
+          --add-data "bin/_internal/outapp:outapp"\
           --add-data "bin/_internal/font:font"\
           --add-data "bin/_internal/image:image"\
           --add-data "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina:usina/"\
