@@ -17,7 +17,7 @@ def start():
                 script_path = os.path.join(script_dir, file_name)
                 # 动态导入脚本
                 try:
-                    module = importlib.import_module(f"outapp.{script_name}")
+                    module = importlib.import_module(f"{script_name}")
                     # 调用脚本中的 start() 函数
                     module.start()
                 except Exception as e:
