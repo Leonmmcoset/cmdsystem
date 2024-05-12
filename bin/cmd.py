@@ -55,6 +55,7 @@ elif SYSTEMCHOOSEMODE == 1:
     from app import downloader
     from app import pip
     from app import outside_app_docx as osappdocx
+    from app import outside_app_installer as osappins
     p.bar()
     print(color.blue+'[SYSTEM]Local appcation load done'+color.end)
     from windows import cmd
@@ -170,6 +171,8 @@ elif SYSTEMCHOOSEMODE == 1:
                 osappdocx.start()
             elif com =='app':
                 outapp.start()
+            elif com =='app install':
+                osappins.start()
             else:
                 print(color.red+'Error:"',com,'"is not a command!'+color.end)
         except Exception as ecpt:
