@@ -25,7 +25,7 @@ missing module named urllib.url2pathname - imported by urllib (conditional), pip
 missing module named urllib.unquote - imported by urllib (conditional), pip._vendor.distlib.compat (conditional)
 missing module named urllib.quote - imported by urllib (conditional), pip._vendor.distlib.compat (conditional)
 missing module named urllib.urlretrieve - imported by urllib (conditional), pip._vendor.distlib.compat (conditional)
-missing module named posix - imported by os (conditional, optional), posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional)
+missing module named posix - imported by posixpath (optional), shutil (conditional), importlib._bootstrap_external (conditional), os (conditional, optional)
 missing module named resource - imported by posix (top-level)
 missing module named _frozen_importlib_external - imported by importlib._bootstrap (delayed), importlib (optional), importlib.abc (optional), zipimport (top-level), pip._vendor.distlib.resources (optional)
 excluded module named _frozen_importlib - imported by importlib (optional), importlib.abc (optional), zipimport (top-level), pip._vendor.distlib.resources (optional)
