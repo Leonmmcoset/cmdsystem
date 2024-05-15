@@ -7,7 +7,7 @@ def start():
 
     def download_file(url, save_dir):
         print(color.blue+'[DOWNLOADER]Please wait...'+color.end)
-        versio# 发送GET请求下载文件
+        # 发送GET请求下载文件
         response = requests.get(url)
         # 获取文件名
         parsed_url = urlparse(url)
