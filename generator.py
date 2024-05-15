@@ -16,7 +16,7 @@ os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --path "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina"\
           --path "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina-7.0.0.dist-info"\
           --path "C:\\Users\\leonm\PycharmProjects\\leonsystem\\venv\Lib\site-packages\panda3d-1.10.14.dist-info"\
-          --collect-submodules panda3d --collect-binaries panda3d --collect-data panda3d \
+          --collect-submodules panda3d --collect-binaries panda3d --collect-data panda3d --collect-data ursina \
           --hidden-import _internal.outapp \
           -i="C:\\Users\\leonm\\PycharmProjects\\leonsystem\\icon.ico" \
           -D -y \

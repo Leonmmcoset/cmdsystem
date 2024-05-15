@@ -7,6 +7,7 @@ datas = [('bin/_internal/audio', 'audio'), ('bin/_internal/outapp', 'outapp'), (
 binaries = []
 hiddenimports = ['_internal.outapp']
 datas += collect_data_files('panda3d')
+datas += collect_data_files('ursina')
 binaries += collect_dynamic_libs('panda3d')
 hiddenimports += collect_submodules('panda3d')
 
