@@ -8,8 +8,11 @@ binaries = []
 hiddenimports = ['_internal.outapp']
 datas += collect_data_files('panda3d')
 datas += collect_data_files('ursina')
+datas += collect_data_files('outapp')
 binaries += collect_dynamic_libs('panda3d')
+binaries += collect_dynamic_libs('outapp')
 hiddenimports += collect_submodules('panda3d')
+hiddenimports += collect_submodules('outapp')
 
 
 a = Analysis(
