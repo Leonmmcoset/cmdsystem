@@ -14,7 +14,7 @@ hiddenimports += collect_submodules('panda3d')
 
 a = Analysis(
     ['C:\\Users\\leonm\\PycharmProjects\\leonsystem\\bin\\cmd.py'],
-    pathex=['C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\panda3d', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\ursina', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\ursina-7.0.0.dist-info', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\panda3d-1.10.14.dist-info'],
+    pathex=['C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\panda3d', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\ursina', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\ursina-7.0.0.dist-info', 'C:\\Users\\leonm\\PycharmProjects\\leonsystem\\venv\\Lib\\site-packages\\panda3d-1.10.14.dist-info', '_internal\\outapp'],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
