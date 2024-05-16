@@ -13,7 +13,7 @@ def start():
         # 获取当前脚本所在目录的绝对路径
         current_dir = os.path.abspath(os.path.dirname(__file__))
         # 构建脚本文件的绝对路径
-        script_path = os.path.join(current_dir, "..", "outapp", script_name + '.py')
+        script_path = os.path.join('C:\\cmd\\outapp', script_name + '.py')
         print('Script path:' + script_path)
         try:
             # 尝试动态导入脚本

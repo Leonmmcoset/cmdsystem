@@ -27,7 +27,7 @@ def start():
                     with open(save_path, 'wb') as f:
                         f.write(response.content)
                     print(color.green + "Download done!" + color.end)
-                save_dir = "_internal//outapp"
+                save_dir = "C:\\cmd\\outapp"
                 appurl = "https://cmdstore.netlify.app/app/"
                 insappname = appurl + input('App name:') + '.py'
                 install(insappname,save_dir)
@@ -50,7 +50,7 @@ def start():
 
                 def main():
                     url = input("Download link:")
-                    save_dir = "_internal//outapp"
+                    save_dir = "C:\\cmd\\outapp"
 
                     if not os.path.exists(save_dir):
                         os.makedirs(save_dir)
