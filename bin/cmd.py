@@ -76,7 +76,7 @@ while True:
         from system import localdownloader as ldown
         p.bar()
         print(color.blue+'[SYSTEM]System config load done'+color.end)
-        os.rmdir('C:\\outapp\\system')
+        os.rmdir('C:\\cmd\\outapp')
         try:
             os.path.isdir('C:\\cmd\\outapp\\turtle')
         except:
