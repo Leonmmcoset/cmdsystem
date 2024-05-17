@@ -3,13 +3,11 @@ import os
 import shutil
 try:
     shutil.rmtree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp')
-except:
-    pass
-shutil.copytree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\system','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
-try:
+    os.mkdir('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp')
     shutil.copytree('C:\\Users\leonm\AppData\Local\JetBrains\PyCharm2023.2\python_stubs\\45802391','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp')
 except:
     pass
+shutil.copytree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\system','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
 os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --add-data "bin/_internal/font:font"\
           --add-data "bin/_internal/image:image"\
