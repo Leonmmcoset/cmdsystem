@@ -77,10 +77,9 @@ while True:
         from system import localdownloader as ldown
         p.bar()
         print(color.blue+'[SYSTEM]System config load done'+color.end)
-        rmtree('C:\\cmd\\outapp')
-        try:
-            os.path.isdir('C:\\cmd\\outapp\\turtle')
-        except:
+        #Check "pygame" folder,need pygame!
+        if not os.path.isdir('C:\cmd\outapp\pygame'):
+            rmtree('C:\cmd\outapp')
             ldown.copy_file('_internal\\cmd\\outapp','C:\\cmd\\outapp')
         image = Image.open('_internal/image/icon.png')
         new_width, new_height = image.size
