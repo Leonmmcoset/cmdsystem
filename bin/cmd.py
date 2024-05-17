@@ -23,6 +23,7 @@ from leonranp import *
 from system import prosess as p
 from PIL import Image
 import os
+from shutil import *
 print('LOAD DONE.')
 #Color must put here!
 from system import color
@@ -76,7 +77,7 @@ while True:
         from system import localdownloader as ldown
         p.bar()
         print(color.blue+'[SYSTEM]System config load done'+color.end)
-        os.rmdir('C:\\cmd\\outapp')
+        rmtree('C:\\cmd\\outapp')
         try:
             os.path.isdir('C:\\cmd\\outapp\\turtle')
         except:
