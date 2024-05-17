@@ -2,7 +2,7 @@
 import os
 import shutil
 try:
-    shutil.rmtree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
+    shutil.rmtree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp')
 except:
     pass
 shutil.copytree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\system','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
