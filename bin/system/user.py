@@ -2,12 +2,10 @@ import pickle
 import os
 from system import color
 def start():
-
     try:
         os.path.isdir('C:\\cmd')
     except:
         os.mkdir('C:\\cmd')
-    import pickle
 
     def save_password(password):
         with open("C:\\cmd\\user.dat", "wb") as f:

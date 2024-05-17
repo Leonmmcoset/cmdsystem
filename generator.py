@@ -1,8 +1,19 @@
 #The Upload & Generator File#
 import os
+import shutil
+try:
+    shutil.rmtree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
+except:
+    pass
+shutil.copytree('C:\\Users\leonm\PycharmProjects\leonsystem\\bin\system','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp\system')
+try:
+    shutil.copytree('C:\\Users\leonm\AppData\Local\JetBrains\PyCharm2023.2\python_stubs\\45802391','C:\\Users\leonm\PycharmProjects\leonsystem\\bin\_internal\cmd\outapp')
+except:
+    pass
 os.system(f'pyinstaller --add-data "bin/_internal/audio:audio"\
           --add-data "bin/_internal/font:font"\
           --add-data "bin/_internal/image:image"\
+          --add-data "bin/_internal/cmd:cmd"\
           --add-data "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina:usina/"\
           --add-data "C:\\Users\\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\\ursina-7.0.0.dist-info:ursina-7.0.0.dist-info"\
           --add-data "C:\\Users\leonm\PycharmProjects\leonsystem\\venv\Lib\site-packages\panda3d:panda3d"\
