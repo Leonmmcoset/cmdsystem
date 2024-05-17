@@ -1,6 +1,7 @@
+import subprocess
+import os
 def start():
-    import subprocess
-    import os
+
 
 
     def run_python_script(script_path):
