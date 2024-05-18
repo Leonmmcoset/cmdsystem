@@ -6,7 +6,7 @@ from system import color as c
 #-----BUG-----#
 #https://github.com/pyinstaller/pyinstaller/issues/8442
 def start():
-    #Window config
+    #Window conf
     window.borderless = False
     window.title = "Blockgame - CMD Game"
     window.icon = "_internal/image/blockgame.ico"

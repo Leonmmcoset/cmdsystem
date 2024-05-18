@@ -1,4 +1,4 @@
-#System config:time system.
+#System conf:time system.
 def time():
     import time as t
     import sys as s
