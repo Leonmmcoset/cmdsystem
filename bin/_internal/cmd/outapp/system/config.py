@@ -8,11 +8,14 @@ def main(variable_to_check):
         os.chmod('C:\cmd\conf\main.properties', 0o666)
         with open('C:\cmd\conf\main.properties', 'r') as file:
             for line in file:
-                line = line.strip()
-                variable, value = line.split(' = ')
-                value = value.strip()
+                # 忽略以 '#' 开头的行和空行
+                if line.startswith('#') or not line.strip():
+                    continue
+                # 去除行尾的换行符并分割出变量名和值
+                variable, value = line.strip().split(' = ')
+                # 如果找到要检查的变量名
                 if variable == variable_to_check:
-                    return value == 'True'
+                    return value.strip() == 'True'
     except FileNotFoundError:
         print(f"File not found.")
     except Exception as e:
