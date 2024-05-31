@@ -1,13 +1,26 @@
-purple = '\033[95m'
-cyan = '\033[96m'
-darkcyan = '\033[36m'
-blue = '\033[94m'
-green = '\033[92m'
-yellow = '\033[93m'
-red = '\033[91m'
-bold = '\033[1m'
-underline = '\033[4m'
-end = '\033[0m'
+from system import config
+if config.main('color'):
+    purple = '\033[95m'
+    cyan = '\033[96m'
+    darkcyan = '\033[36m'
+    blue = '\033[94m'
+    green = '\033[92m'
+    yellow = '\033[93m'
+    red = '\033[91m'
+    bold = '\033[1m'
+    underline = '\033[4m'
+    end = '\033[0m'
+else:
+    purple = ''
+    cyan = ''
+    darkcyan = ''
+    blue = ''
+    green = ''
+    yellow = ''
+    red = ''
+    bold = ''
+    underline = ''
+    end = ''
 def start():
     print(purple+'Purple'+end)
     print(cyan+'Cyan'+end)

@@ -34,6 +34,7 @@ def start():
     if configchoose == '1':
         print('test -> Test config running.')
         print('image -> See text-image.')
+        print('color -> See color text.')
         # print('')
     else:
         print(color.red+'Choose failed!'+color.end)

@@ -87,6 +87,7 @@ while True:
         # os.chmod('C:\cmd\conf\main.properties', 0o666)
         config.running()
         if not os.path.isdir('C:\cmd\outapp\pygame'):
+            print('Please wait!Don\'t close the appcation!')
             rmtree('C:\cmd\outapp')
             ldown.copy_file('_internal\\cmd\\outapp','C:\\cmd\\outapp')
         #Config load start#
