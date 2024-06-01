@@ -203,7 +203,7 @@ while True:
                 elif com =='config':
                     config.start()
                 else:
-                    print(color.red+'Error:"',com,'"is not a command!'+color.end)
+                    print(color.red+'Error:"'+com+'"is not a command!'+color.end)
             except Exception as ecpt:
                 death.dead(1,ecpt)
     else:
